@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>FaqLarger</title>
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="http://localhost:4000/FaqAnswers/FaqLarger/">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<body>
+	<aside>
+	<div class="container">
+		<nav>
+			<ul>
+				 
+				<li><a href="/about/">About</a></li>
+				  
+				<li><a href="/gallery/">Gallery</a></li>
+				  
+				<li><a href="/documentation/">Documentation</a></li>
+				  
+				<li><a href="/resources/">Resources</a></li>
+				  
+				<li><a href="/faq/">FAQ</a></li>
+				  
+				<li><a href="/theory/">Theory and Publications</a></li>
+				  
+				<li><a href="/license/">License</a></li>
+				  
+				<li><a href="/credits/">Credits</a></li>
+				  
+				<li><a href="/contact/">Contact</a></li>
+				  
+				<li><a href="/FaqAnswers/FaqAttr/">FaqAttr</a></li>
+				  
+				<li><a href="/FaqAnswers/FaqDiscuss/">FaqDiscuss</a></li>
+				  
+				<li><a href="/FaqAnswers/FaqLarger/">FaqLarger</a></li>
+				             
+			</ul>
+			</li>
+			</ul>
+		</nav>
+	</div>
+</aside>
+
+<header>
+	<h1><a href="">Graphviz - Graph Visualization Software</a></h1>
+</header>
+
+	<main>
+		<article>
+			<h2>FaqLarger</h2>
+   
+    <p><em>I’m trying to make a layout larger. How?</em></p>
+
+<p>There are various ways to increase the size of a layout. In doing this, one has to decide if the sizes of the nodes and text should be increased as well.</p>
+
+<p>One approach is to adjust individual parameters such as fontsize, nodesep and ranksep. For example,</p>
+
+<pre><code class="language-C++">digraph G {
+  graph [fontsize=24]
+  edge [fontsize=24]
+  node [fontsize=24]
+  ranksep = 1.5
+  nodesep = .25
+  edge [style="setlinewidth(3)"]
+  a -&gt; b -&gt; c
+}
+</code></pre>
+
+<p>If you do this, make sure you are not fighting a conflicting graph size 
+setting, like <code class="highlighter-rouge">size="6,6"</code>, which will then scale everything back down.</p>
+
+<p>If you are using fdp or neato, increasing the edge len will tend to expand the layout.</p>
+
+<pre><code class="language-C++">graph G {
+  edge [len=3]
+  a -- { b c d }
+}
+</code></pre>
+
+<p>For twopi and circo, there are other parameters such as <code class="highlighter-rouge">ranksep</code> which can be 
+used. See the <a href="../../_pages/doc/info/attrs.html">graph attributes</a>.</p>
+
+<p>You can also use the <code class="highlighter-rouge">ratio</code> attribute. If you set the <code class="highlighter-rouge">size</code> attribute to the 
+desired drawing size, and then set <code class="highlighter-rouge">ratio=fill</code>, node positions are scaled 
+separately in x and y until the drawing fills the specified size. Note that 
+node sizes stay the same. If, instead, you set <code class="highlighter-rouge">ratio=expand</code>, the layout is 
+uniformly scaled up in x and y until at least one dimension fits size.</p>
+
+<p>If you specify the <code class="highlighter-rouge">size</code> attribute but end it with an exclamation mark (!), 
+the final drawing will be scaled up uniformly in x and y until at least one 
+dimension fits size. Note that everything is scaled up, including text and 
+node sizes.</p>
+
+<p>If you’re using Postscript, you can just scale up the output by manually 
+adding a command such as <code class="highlighter-rouge">2 2 scale</code> where the Postscript environment is set 
+up. Make sure to adjust the BoundingBox too if your tools look at this header.</p>
+
+
+
+		</article>
+		<footer>
+</footer>
+
+	</main>
+</body>
+
+</html>
