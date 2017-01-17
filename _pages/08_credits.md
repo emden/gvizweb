@@ -10,6 +10,7 @@ Graphviz has benefited by the contributions of many people over the years.
 * John Ellson (Tcl/Tk and codegen extensions)
 * Emden Gansner (dot, neato, twopi, circo, fdp, osage, smyrna, gvmap, prism, gvpr)
 * Yifan Hu (sfdp, prism, gvmap, cluster, mm2gv)
+* Erwin Janssen
 * Stephen North (dot, neato)
 
 	and
