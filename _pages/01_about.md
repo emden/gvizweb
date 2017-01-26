@@ -45,7 +45,7 @@ aims edges in the same direction (top to bottom, or left to right) and
 then attempts to avoid edge crossings and reduce edge length.
 
 <p align="center">
-  <img src="_pages/Gallery/directed/cluster.small.png" />
+  <img src="/_pages/Gallery/directed/cluster.small.png" />
 </p>
 
 * **neato** - ``spring model'' layouts.  This is the default tool to use if 
