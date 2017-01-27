@@ -9,8 +9,8 @@ If you cannot find the answer to your question here, open an issue on the <a hre
 
 ## Contributions
 
-* [FaqToDo](/_pages/doc/todo.html) Our TODO list
-* [FaqPSdefs](/_pages/Documentation/html/isofonts.txt) PostScript defs for ISO-latin1 fonts (by [Enrique Vidal](evidal@iti.upv.es))
+* [FaqToDo]({{ site.url }}/_pages/doc/todo.html) Our TODO list
+* [FaqPSdefs]({{ site.url }}/_pages/Documentation/html/isofonts.txt) PostScript defs for ISO-latin1 fonts (by [Enrique Vidal](evidal@iti.upv.es))
 
 ## General
 
@@ -23,7 +23,7 @@ If you cannot find the answer to your question here, open an issue on the <a hre
  * [FaqGraphLabel](#FaqGraphLabel) How can I set a graph or cluster label without its propagating to all sub-clusters?
  * [FaqParEdge](#FaqParEdge) How can I draw multiple parallel edges in neato?
  * [FaqBalanceTree](#FaqBalanceTree) How can I symmetrize (balance) tree layouts?
- * [FaqCommandLine](/_pages/doc/info/command.html) What is the Graphviz command line syntax?
+ * [FaqCommandLine]({{ site.url }}/_pages/doc/info/command.html) What is the Graphviz command line syntax?
  * [FaqUserTypes](#FaqUserTypes) What user types does Graphviz support?
  * [FaqBugReport](#FaqBugReport) How can I report a bug or issue I've found?
 
@@ -79,9 +79,9 @@ If you cannot find the answer to your question here, open an issue on the <a hre
 
 ### <a name="FaqAttr"></a>Where can I see a list of all the attributes that control dot or neato?
 
-See <A HREF="/_pages/doc/info/attrs.html">Graph Attributes</A>. There is also information on
-<A HREF="/_pages/doc/info/command.html"> command-line usage</A> and 
-<A HREF="/_pages/doc/info/output.html">output formats</A>.
+See <A HREF="{{ site.url }}/_pages/doc/info/attrs.html">Graph Attributes</A>. There is also information on
+<A HREF="{{ site.url }}/_pages/doc/info/command.html"> command-line usage</A> and 
+<A HREF="{{ site.url }}/_pages/doc/info/output.html">output formats</A>.
 
 ### <a name="FaqDiscuss"></a>Where can I discuss Graphviz?
 
@@ -118,7 +118,7 @@ graph G {
 ```
 
 For twopi and circo, there are other parameters such as `ranksep` which can be 
-used. See the [graph attributes](../../_pages/doc/info/attrs.html).
+used. See the [graph attributes](../..{{ site.url }}/_pages/doc/info/attrs.html).
 
 You can also use the `ratio` attribute. If you set the `size` attribute to the 
 desired drawing size, and then set `ratio=fill`, node positions are scaled 
@@ -162,7 +162,7 @@ you would like to have a `-Tpdf` flag, use `-Tps2` before converting to PDF.
 
 In the diagram below, the shaded nodes will contain bad output.
 
-![alt text](/_pages/doc/pspdf.png "ps to pdf")
+![alt text]({{ site.url }}/_pages/doc/pspdf.png "ps to pdf")
 
 ### <a name="FaqDupNode"></a> How can I make duplicate nodes?
 
@@ -188,7 +188,7 @@ When the splines attribute is false, which is the default, multiedges are drawn 
 When splines=true or polyline, multiedges are drawn as roughly parallel splines or polylines. This relies on there being no node overlaps.
 
 An additional trick which is sometimes sufficient is to specify multiple colors for the edge using a color list. This will a produce set of 
-tightly parallel splines, each in its specified color. Read about the [color attribute](/_pages/doc/info/colors.html) for more information.
+tightly parallel splines, each in its specified color. Read about the [color attribute]({{ site.url }}/_pages/doc/info/colors.html) for more information.
 
 ### <a name="FaqBalanceTree"></a> How can I symmetrize (balance) tree layouts?
 
@@ -287,7 +287,7 @@ graph G {
 }
 ```
 
-You can look up other examples in this handy [character set reference](/_pages/doc/char.html).
+You can look up other examples in this handy [character set reference]({{ site.url }}/_pages/doc/char.html).
 
 ### <a name="FaqNonAscii"></a> More generally, how do I use non-ASCII character sets?
 
@@ -327,9 +327,9 @@ For SVG output, we just pass the raw UTF-8 (or other encoding) straight through 
 
 ### <a name="FaqCustShape"></a> How can I create custom shapes?
 
-One approach is to use [HTML-like labels](/_pages/doc/info/shapes.html#html) possibly combined with embedded images use the `IMG` attribute.
+One approach is to use [HTML-like labels]({{ site.url }}/_pages/doc/info/shapes.html#html) possibly combined with embedded images use the `IMG` attribute.
 
-As alluded to in the [dot user's guide](/_pages/pdf/dotguide.pdf), if you want truly custome shape, there are several ways to incorporate this.
+As alluded to in the [dot user's guide]({{ site.url }}/_pages/pdf/dotguide.pdf), if you want truly custome shape, there are several ways to incorporate this.
 At this point, they either must be in PostScript or 
 image files, or you'll need to modify the source code. A serious problem is that you can't make custom shapes that work across all the drivers and the interactive front-ends 
 such as dotty or Grappa. At least SVG has interactive renderers, and PostScript can be translated to PDF which also has some interactive features.
@@ -343,8 +343,8 @@ nodes. For example:
    yournode [image="yourface.gif"];
 ```
 
-indicates the contents of the node are given in the GIF file `yourface.gif`. The [image](/_pages/doc/info/attrs.html#dimage) attribute specifies which file to use. 
-(There is also the deprecated [shapefile](/_pages/doc/info/attrs.html#dshapefile) 
+indicates the contents of the node are given in the GIF file `yourface.gif`. The [image]({{ site.url }}/_pages/doc/info/attrs.html#dimage) attribute specifies which file to use. 
+(There is also the deprecated [shapefile]({{ site.url }}/_pages/doc/info/attrs.html#dshapefile) 
 attribute. This is similar to image but the node shape will always be a box.)
 
 *NOTE: In versions before 11 March 2006, in particular, 1.12 graphviz and earlier, it is necessary to also set the attribute shape=custom.*
@@ -461,7 +461,7 @@ shape (for edge clipping), generate code for the shape via the functions provide
 ports on the interior of a node (if they can exist).
 
 More information on the functions available via gvrender_engine_t and the Graphviz graphics model can be found in Section 5 of the 
-[Graphviz library manual](/_pages/pdf/libguide.pdf).
+[Graphviz library manual]({{ site.url }}/_pages/pdf/libguide.pdf).
 
 Shapes that behave more or less like polygons can be bootstrapped from the basic polygon methods; see for example the "invtri" or "tab" shape. 
 Such shapes use a polygon descriptor whose fields are listed below.
@@ -524,11 +524,11 @@ produces the 5 layers shown below:
 
 Layer 1 | Layer 2 | Layer 3
 :------:|:------:|:------: 
-![](/_pages/doc/lay1.gif) | ![](/_pages/doc/lay2.gif) | ![](/_pages/doc/lay3.gif)
+![]({{ site.url }}/_pages/doc/lay1.gif) | ![]({{ site.url }}/_pages/doc/lay2.gif) | ![]({{ site.url }}/_pages/doc/lay3.gif)
 
 Layer 4 | Layer 5
 :------:|:------:
-![](/_pages/doc/lay4.gif) | ![](/_pages/doc/lay5.gif) 
+![]({{ site.url }}/_pages/doc/lay4.gif) | ![]({{ site.url }}/_pages/doc/lay5.gif) 
 
 In a layered graph, if a given node (or edge) does not have a layer assignment, but incident edges (nodes, resp.) do, its layer specification is inferred from these. 
 For example, in the examples above, `node4` only appears on layer 3, because a layer assignment was given for its connecting edge. Note, however, that if a 
@@ -575,7 +575,7 @@ We don't want to reset a,b,c to color=black just because that is default in sub1
 
 ### <a name="FaqFontChanges"></a> How do I get font and color changes in record labels or other labels?
 
-This is not possible in record shapes. However, you can do this using [HTML-like labels](/_pages/doc/info/shapes.html#html).
+This is not possible in record shapes. However, you can do this using [HTML-like labels]({{ site.url }}/_pages/doc/info/shapes.html#html).
 
 ### <a name="FaqPlainArrows"></a> In `-Tplain` format, splines do not touch the nodes (arrowheads are missing).
 
@@ -586,14 +586,14 @@ drawing the edge spline will leave a gap between the edge and the node. This is 
 ### <a name="FaqRecordLR"></a> Record nodes are drawn differently in dot and neato when rankdir=LR.
 
 It's true. `dot -Grankdir=LR` rotates record nodes so that their top level fields are still listed across levels. `rankdir=LR` has no effect in neato. 
-One workaround is to use [HTML-like labels](/_pages/doc/info/shapes.html#html) (they don't rotate; the downside is that you have to write in XML). 
+One workaround is to use [HTML-like labels]({{ site.url }}/_pages/doc/info/shapes.html#html) (they don't rotate; the downside is that you have to write in XML). 
 In general, we recommend replacing record nodes with the much more general HTML-like labels.
 Another workaround is to enclose record labels in { } to rotate/unrotate the record contents.
 See also, How To Avoid Foolish Consistency by Scott Berkun (Microsoft Corp.)
 
 ### <a name="FaqMultiPage"></a> How can I print a big graph on multiple pages?
 
-The [page](/_pages/doc/info/attrs.html#dpage) attribute, if set, tells Graphviz to print the graph as an array of pages of the given size. Thus, the graph
+The [page]({{ site.url }}/_pages/doc/info/attrs.html#dpage) attribute, if set, tells Graphviz to print the graph as an array of pages of the given size. Thus, the graph
 
 ```C++
 digraph G {
@@ -605,7 +605,7 @@ digraph G {
 will be emitted as 8.5 by 11 inch pages. When printed, the pages can be tiled to make a drawing of the entire graph. At present, the feature only works with PostScript output.
 
 Alternatively, there are various tools and viewers which will take a large picture and allow you to extract page-size pieces, which can then be printed.
-See also the [viewport](/_pages/doc/info/attrs.html#dviewport) attribute.
+See also the [viewport]({{ site.url }}/_pages/doc/info/attrs.html#dviewport) attribute.
 
 ### <a name="FaqJpgArtifacts"></a> When I have a red edge it shows up as a solid red in PNG and GIF formats, but has a black border when rendered to JPEG.
 
@@ -660,7 +660,7 @@ Run `neato -Txdot -n`. This will add the necessary edge information.
 
 ### <a name="FaqClientSideMaps"></a> How can I make client-side image maps?
 
-Use the `-Tcmapx` command line option. See [here](/_pages/doc/info/output.html#dcmapx) for more details.
+Use the `-Tcmapx` command line option. See [here]({{ site.url }}/_pages/doc/info/output.html#dcmapx) for more details.
 
 ### <a name="FaqServerSideMaps"></a> Why aren't my server-side maps being recognized? I've checked the HTML!
 
@@ -692,13 +692,13 @@ The Graphviz authors have qualms about the gratuitous use of 3D.
 
 Nonetheless, `dot -Tvrml` generates VRML files. There's no Z coordinate layout - you specify Z coords yourself in the z attribute of nodes, and the Z coordinates of edges are interpolated. If someone contributes a driver for a newer, more useful format (OpenGL Performer scene graphs? Open Scene Graphs? Java3D programs?) we'd like to try it.
 
-neato internally supports layouts in higher dimensions through the [dim](/_pages/doc/info/attrs.html#ddim) and [dimen](/_pages/doc/info/attrs.html#ddimen) attributes, 
+neato internally supports layouts in higher dimensions through the [dim]({{ site.url }}/_pages/doc/info/attrs.html#ddim) and [dimen]({{ site.url }}/_pages/doc/info/attrs.html#ddimen) attributes, 
 e.g. `neato -Gdim=7`. Graphviz output handles 2D and 3D, but there's no way to get higher-dimensional output unless you invoke neato as a library and inspect `ND_pos(n)[i]` 
 where n is a pointer to the relevant node. 
 
 ### <a name="FaqOverlapNode"></a> How can I avoid node overlaps in neato?
 
-Use the graph attribute [overlap](/_pages/doc/info/attrs.html#doverlap).
+Use the graph attribute [overlap]({{ site.url }}/_pages/doc/info/attrs.html#doverlap).
 
 ### <a name="FaqOverlapEdge"></a> How can I avoid node-edge overlaps in neato?
 
