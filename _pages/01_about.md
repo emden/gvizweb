@@ -45,7 +45,7 @@ aims edges in the same direction (top to bottom, or left to right) and
 then attempts to avoid edge crossings and reduce edge length.
 
 <p align="center">
-  <img src="/_pages/Gallery/directed/cluster.small.png" />
+  <img src="{{ site.url }}/_pages/Gallery/directed/cluster.small.png" />
 </p>
 
 * **neato** - ``spring model'' layouts.  This is the default tool to use if 
@@ -56,7 +56,7 @@ using stress majorization, though the older Kamada-Kawai algorithm, using
 steepest descent, is also available.
 
 <p align="center">
-  <img src="/_pages/Gallery/undirected/ER.small.png" />
+  <img src="{{ site.url }}/_pages/Gallery/undirected/ER.small.png" />
 </p>
 
 * **fdp** - ``spring model'' layouts similar to those of neato, but does this 
@@ -65,13 +65,13 @@ Fruchterman-Reingold heuristic including a multigrid solver that handles
 larger graphs and clustered undirected graphs.
 
 <p align="center">
-  <img src="/_pages/Gallery/undirected/fdpclust.small.png" />
+  <img src="{{ site.url }}/_pages/Gallery/undirected/fdpclust.small.png" />
 </p>
 
 * **sfdp** - multiscale version of fdp for the layout of large graphs.
 
 <p align="center">
-  <img src="/_pages/Gallery/undirected/200910_viz_matrix_188w.png" />
+  <img src="{{ site.url }}/_pages/Gallery/undirected/200910_viz_matrix_188w.png" />
 </p>
 
 * **twopi** - radial layouts, after Graham Wills 97. Nodes are placed on 
@@ -79,7 +79,7 @@ concentric circles depending their distance from a given root node. You can
 set the root node, or let twopi do it.
 
 <p align="center">
-  <img src="/_pages/Gallery/twopi/twopi2.small.png" />
+  <img src="{{ site.url }}/_pages/Gallery/twopi/twopi2.small.png" />
 </p>
 
 * circo  - circular layout, after Six and Tollis 99, Kauffman and Wiese 02. 
@@ -87,7 +87,7 @@ This is suitable for certain diagrams of multiple cyclic structures, such as
 certain telecommunications networks.
 
 <p align="center">
-  <img src="/_pages/Gallery/undirected/honda-tokoro.circo.png" />
+  <img src="{{ site.url }}/_pages/Gallery/undirected/honda-tokoro.circo.png" />
 </p>
 
 ## Viewers

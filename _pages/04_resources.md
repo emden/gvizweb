@@ -258,12 +258,12 @@ but any domain can be graphed [Mike Zick]
 
 <ul>
 <li><a href="http://atrpms.net/name/graphviz/">Axel Thimm</a> - rpms for some RedHat Linux distributions (&quot;atrpms&quot;).</li>
-<li><a href="http://dag.wieers.com/rpm/packages/graphviz/"><img alt="dag logo" src="/_pages/Resources/dag.png" /> Dag Wieers</a> - rpms for some RedHat Linux distributions.</li>
+<li><a href="http://dag.wieers.com/rpm/packages/graphviz/"><img alt="dag logo" src="{{ site.url }}/_pages/Resources/dag.png" /> Dag Wieers</a> - rpms for some RedHat Linux distributions.</li>
 <li><a href="http://fr2.rpmfind.net/linux/rpm2html/search.php?query=graphviz&amp;submit=Search+...&amp;system=&amp;arch=">RPM Find</a> - many distros and architectures.</li>
-<li><a href="http://packages.debian.org/search?suite=all&amp;searchon=names&amp;keywords=graphviz"><img alt="debian logo" src="/_pages/Resources/debian-logo.png" /> Debian</a> - Linux packages for several architectures.</li>
-<li><a href="http://packages.gentoo.org/package/media-gfx/graphviz"><img alt="gentoo logo" src="/_pages/Resources/gentoo.jpeg" /> Gentoo</a> - Linux packages.</li>
-<li><a href="http://download.fedora.redhat.com/pub/fedora/linux/extras/"><img alt="fedora logo" src="/_pages/Resources/fedora_logo.png" /> Fedora Extras</a> - rpms for Fedora Core 3 and later.</li>
-<li><a href="http://freecode.com/search/?q=graphviz&amp;section=projects&amp;Go.x=0&amp;Go.y=0"><img alt="freshmeat logo" src="/_pages/Resources/freshmeat-logo.gif" /> FreshMeat</a> - related projects from a search for &quot;graphviz&quot;.</li>
-<li><a href="http://software.opensuse.org/search?q=graphviz"><img alt="suse logo" src="/_pages/Resources/suse-logo.png" /> SuSE</a> - rpms for Novell/SuSE distributions for many architectures.</li>
-<li><a href="http://packages.ubuntu.com/search?keywords=graphviz&amp;searchon=names&amp;suite=all&amp;section=all"><img alt="ubuntu logo" src="/_pages/Resources/ubuntu-logo.png" /> Ubuntu</a> - Linux packages.</li>
+<li><a href="http://packages.debian.org/search?suite=all&amp;searchon=names&amp;keywords=graphviz"><img alt="debian logo" src="{{ site.url }}/_pages/Resources/debian-logo.png" /> Debian</a> - Linux packages for several architectures.</li>
+<li><a href="http://packages.gentoo.org/package/media-gfx/graphviz"><img alt="gentoo logo" src="{{ site.url }}/_pages/Resources/gentoo.jpeg" /> Gentoo</a> - Linux packages.</li>
+<li><a href="http://download.fedora.redhat.com/pub/fedora/linux/extras/"><img alt="fedora logo" src="{{ site.url }}/_pages/Resources/fedora_logo.png" /> Fedora Extras</a> - rpms for Fedora Core 3 and later.</li>
+<li><a href="http://freecode.com/search/?q=graphviz&amp;section=projects&amp;Go.x=0&amp;Go.y=0"><img alt="freshmeat logo" src="{{ site.url }}/_pages/Resources/freshmeat-logo.gif" /> FreshMeat</a> - related projects from a search for &quot;graphviz&quot;.</li>
+<li><a href="http://software.opensuse.org/search?q=graphviz"><img alt="suse logo" src="{{ site.url }}/_pages/Resources/suse-logo.png" /> SuSE</a> - rpms for Novell/SuSE distributions for many architectures.</li>
+<li><a href="http://packages.ubuntu.com/search?keywords=graphviz&amp;searchon=names&amp;suite=all&amp;section=all"><img alt="ubuntu logo" src="{{ site.url }}/_pages/Resources/ubuntu-logo.png" /> Ubuntu</a> - Linux packages.</li>
 </ul>
