@@ -15,7 +15,7 @@ and in visual interfaces for many other domains.
 
 Graphviz is open source graph visualization software.
 It has several main graph layout programs.
-See the <a href="Gallery.php">gallery</a> for some sample layouts.
+See the <a href="{{ site.url }}/gallery">gallery</a> for some sample layouts.
 It also has web and interactive graphical interfaces,
 and auxiliary tools, libraries, and language bindings.
 
@@ -96,7 +96,7 @@ certain telecommunications networks.
 subsequently been ported to Microsoft Windows.
 * **tcldot** - a TCL/TK scripting language extension for Graphviz
 * **Webdot** - a tcldot scripted WWW service for graphs in HTML documents.
-There is also [a simplified version](_pages/Misc/webdot.pl) written in perl.
+There is also [a simplified version]({{ site.url }}/_pages/Misc/webdot.pl) written in perl.
 * **Grappa** - a Java package for graphs with full Java graph data structures
 * **ZGRViewer** - an SVG-based zooming graph viewer for large graphs.
 * [**Mac OS X graphviz**](http://www.pixelglow.com/graphviz)

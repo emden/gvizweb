@@ -10,7 +10,7 @@ If you cannot find the answer to your question here, open an issue on the <a hre
 ## Contributions
 
 * [FaqToDo]({{ site.url }}/_pages/doc/todo.html) Our TODO list
-* [FaqPSdefs]({{ site.url }}/_pages/Documentation/html/isofonts.txt) PostScript defs for ISO-latin1 fonts (by [Enrique Vidal](evidal@iti.upv.es))
+* [FaqPSdefs]({{ site.url }}/_pages/Documentation/html/isofonts.txt) PostScript defs for ISO-latin1 fonts (by [Enrique Vidal](mailto:evidal@iti.upv.es))
 
 ## General
 
@@ -118,7 +118,7 @@ graph G {
 ```
 
 For twopi and circo, there are other parameters such as `ranksep` which can be 
-used. See the [graph attributes](../..{{ site.url }}/_pages/doc/info/attrs.html).
+used. See the [graph attributes]({{ site.url }}/_pages/doc/info/attrs.html).
 
 You can also use the `ratio` attribute. If you set the `size` attribute to the 
 desired drawing size, and then set `ratio=fill`, node positions are scaled 
@@ -317,7 +317,7 @@ Output: It is essential that a font which has the glyphs for your specified char
 on the target code generator. For the gd-based raster generators (PNG, GIF, etc.) you need a TrueType or Type-1 font file on the machine running the Graphviz program. 
 If Graphviz is built with the fontconfig library, it will be used to find the specified font. Otherwise, Graphviz will look in various default directories 
 for the font. The directories to be searched include those specified by the `fontpath` attribute, related environment or shell 
-variables (see the fontpath entry), and known system font directories. The [table](_pages/doc/char.html) points out that these glyphs are from the times.ttf font. 
+variables (see the fontpath entry), and known system font directories. The [table]({{ site.url }}/_pages/doc/char.html) points out that these glyphs are from the times.ttf font. 
 With fontconfig, it's hard to specify this font. Times usually gets resolved to Adobe Type1 times, which doesn't have all the glyphs seen on that page.)
 
 For PostScript, the input must be either the ASCII subset of UTF-8 or Latin-1. (We have looked for more general solutions, but it appears that UTF-8 
