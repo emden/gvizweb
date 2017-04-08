@@ -40,7 +40,7 @@ The code base is stored <a href="https://github.com/ellson/graphviz">here</a> on
 
 <h2><strong>Documentation</strong></h2>
 
-<p>Documentation is available in the released package and from here: <a href="/documentation">Documentation</a></p>
+<p>Documentation is available in the released package and from here: <a href="{{ site.url }}/documentation">Documentation</a></p>
 
 <h2><strong>Discussions</strong></h2>
 
