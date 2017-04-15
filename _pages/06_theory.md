@@ -2,6 +2,7 @@
 layout: page
 title: Theory and Publications
 permalink: /theory/
+order: 5
 ---
 
 <h2>Graphviz Papers</h2>
