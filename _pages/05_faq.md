@@ -2,6 +2,7 @@
 layout: page
 title: FAQ
 permalink: /faq/
+order: 9
 ---
          
 If you cannot find the answer to your question here, open an issue on the <a href="https://github.com/ellson/graphviz/issues" target="_blank">Graphviz issue page</a>.
