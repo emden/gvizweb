@@ -12,12 +12,14 @@ order: 2
 development versions of Graphviz are available, along with instructions for anonymous 
 access to the sources using [Git](http://git-scm.com/).
 
-## Executable Pages
+## Executable Packages
 
 ### Linux
 
 [Stable and development rpms for Redhat Enterprise, or Centos systems](http://www.graphviz.org/Download_linux_rhel.php)
+
 [Stable and development rpms for Fedora systems](http://www.graphviz.org/Download_linux_fedora.php)
+
 [Stable and development debs for Ubuntu systems](http://www.graphviz.org/Download_linux_ubuntu.php)
 
 ### Windows
@@ -33,7 +35,7 @@ access to the sources using [Git](http://git-scm.com/).
 
 [Stable and development pkgs for Solaris systems](({{ site.url }}/_pages/Download/Download_solaris.md)
 
-## Third-party Executable Pages
+## Third-party Executable Packages
 
 Please contact us if you can offer a platform we don't have, or you've improved on what;s here.
 
@@ -41,7 +43,9 @@ We list these links as a courtesy, but disclaim responsibility for the contents 
 
 ### Linux
 [Debian package](http://packages.debian.org/search?suite=all&amp;searchon=names&amp;keywords=graphviz)
+
 [Ubuntu Precise](http://packages.ubuntu.com/precise/graphics/graphviz), [Raring](http://packages.ubuntu.com/raring/graphics/graphviz) packages.
+
 [Fedora](http://fedoraproject.org/) On a working Fedora system, use:
 
 ```C
@@ -60,6 +64,7 @@ Graphviz and the Mac GUI Graphviz.app. These can be obtained via the ports "grap
 ### Windows
 
 [Cygwin Ports](http://sourceware.org/cygwinports/) provides a port of Graphviz to Cygwin.  
+
 [WinGraphviz](http://wingraphviz.sourceforge.net/wingraphviz/) Win32/COM object (dot/neato library for Visual Basic and ASP).
 
 ### Other Unix
