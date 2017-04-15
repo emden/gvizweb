@@ -2,6 +2,7 @@
 layout: page
 title: Resources
 permalink: /resources/
+order: 7
 ---
          
 <p>These are some representative external resources. The list includes tools that complement Graphviz, such as
