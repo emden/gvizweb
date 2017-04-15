@@ -33,7 +33,7 @@ access to the sources using [Git](http://git-scm.com/).
 
 ### Solaris
 
-* [Stable and development pkgs for Solaris systems](({{ site.url }}/_pages/Download/Download_solaris.md)
+* [Stable and development pkgs for Solaris systems]({{ site.url }}/_pages/Download/Download_solaris.md)
 
 ## Third-party Executable Packages
 
