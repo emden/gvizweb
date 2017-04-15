@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
+order: 10
 ---
 
 If you have a bug or believe something is not working as expected, please 
