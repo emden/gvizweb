@@ -8,7 +8,7 @@ order: 2
          
 ## Source Code
 
-[Source code]({{ site.url }}/_pages/Download/Download_source.md) for the latest stable and 
+[Source code]({{ site.url }}/_pages/Download/Download_source.html) for the latest stable and 
 development versions of Graphviz are available, along with instructions for anonymous 
 access to the sources using [Git](http://git-scm.com/).
 
