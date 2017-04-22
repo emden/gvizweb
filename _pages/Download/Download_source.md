@@ -23,11 +23,14 @@ know about it.
 *HINT*: If you are using an rpm-based system, by far the easiest way to determine all the 
 build dependencies is to download the graphviz-xxx.src.rpm, run:  `rpmbuild --rebuild graphviz-xxx.src.rpm 2>t` , then edit `t` into a yum install command.
 
+
+cairo-1.1.10.tar.gz [optional (required for libpangocairo), recommended]
+: [http://cairographics.org/](http://cairographics.org/)
+
+expat-2.0.0.tar.gz [optional (required for HTML-like labels), recommended]
+: [http://expat.sourceforge.net/](http://expat.sourceforge.net/)
+
 <dl>
-<dt>cairo-1.1.10.tar.gz [optional (required for libpangocairo), recommended]
-<dd>[http://cairographics.org/](http://cairographics.org/)
-<dt>expat-2.0.0.tar.gz [optional (required for HTML-like labels), recommended]
-<dd>[http://expat.sourceforge.net/](http://expat.sourceforge.net/)
 <dt>freetype-2.1.10.tar.gz [optional (required for libpangocairo and for gd), recommended]
 <dd> [http://www.freetype.org/">http://www.freetype.org/)
 <dt>gd-2.0.34.tar.gz [optional, deprecated but needed for GIF output]
