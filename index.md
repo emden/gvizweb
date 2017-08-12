@@ -34,7 +34,7 @@ layout: default
 
 <h2><strong>Download</strong></h2>
 
-<p>The current release of Graphviz can be downloaded here: <a href="/Download.php">Download</a>
+<p>The current release of Graphviz can be downloaded here: <a href="{{ site.url }}/download">Download</a>
 The code base is stored <a href="https://github.com/ellson/graphviz">here</a> on GitHub.
 </p>
 
